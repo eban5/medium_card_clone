@@ -13,7 +13,7 @@ export default function Hand({ children }) {
 
 		for (let i = 1; i <= 6; i++) {
 			let randomWord = word_bank[Math.floor(Math.random() * word_bank.length)];
-			cards.push(<Card idx={i} word={randomWord} className="card" />);
+			cards.push(<Card key={i} word={randomWord} className="card" />);
 		}
 
 		// set hand array

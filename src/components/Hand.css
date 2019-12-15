@@ -1,5 +1,6 @@
 .player_hand {
 	display: flex;
+	flex: 0 0 10em;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	background: darkslategray
