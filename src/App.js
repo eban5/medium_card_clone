@@ -1,16 +1,14 @@
 import React from "react";
 import "./App.css";
-import Card from "./components/Card";
+import Hand from "./components/Hand";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<Card />
-				<div className="small_text">
-					<p>Refresh the page to draw a new card</p>
-				</div>
-			</header>
+			<Hand />
+			<div className="small_text">
+				<p>Refresh the page to draw a new card</p>
+			</div>
 		</div>
 	);
 }

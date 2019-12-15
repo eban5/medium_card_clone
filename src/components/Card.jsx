@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { word_bank } from "./data/word_bank";
+import React from "react";
+import "./Card.css";
 
-export default function Card({ children }) {
-	const [displayWord, setDisplayWord] = useState("");
-
-	useEffect(() => {
-		let randomWord = word_bank[Math.floor(Math.random() * word_bank.length)];
-
-		setDisplayWord(randomWord);
-
-		// return () => {
-		//     cleanup
-		// };
-	}, []);
-
+export default function Card(props) {
+	const { idx, word } = props;
 	return (
-		<div>
-			<h1>{displayWord}</h1>
-		</div>
+		<button className="card" key={idx}>
+			{word}
+		</button>
 	);
 }

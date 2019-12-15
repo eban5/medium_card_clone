@@ -1,0 +1,28 @@
+
+.card {
+	background: lightslategray;
+	list-style: none;
+	padding: 5px;
+	width: 100%;
+	height: 300px;
+	
+	margin: 50px;
+	flex: 0 0 10em;
+line-height: 150px;
+	color: white;
+	font-weight: light;
+	cursor: pointer;
+font-size: 2em;
+	text-align: center;
+}
+
+.card:hover, .card:focus {
+	background:coral;
+	font-weight: bold;
+} 
+
+.small_text {
+	position: absolute;
+	bottom: 0;
+	font-size: 0.75em;
+}
