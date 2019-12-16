@@ -1,7 +1,6 @@
-.player_hand {
+
+.cards {
 	display: flex;
-	flex: 0 0 10em;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	background: darkslategray
+	flex-wrap: wrap;
+	justify-content: space-between;
 }

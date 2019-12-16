@@ -13,11 +13,14 @@ export default function Card(props) {
 
 	return (
 		<>
-			<a href={"#target"} className="card" key={idx} onClick={onClick}>
-				<span>{fetchedWord}</span>
-			</a>
-
-			<button onClick={() => fetchNewWord()}>Reload</button>
+			<article className="card">
+				<div className="word">{fetchedWord}</div>
+				<div className="">
+					<button className="btn_reload" onClick={() => fetchNewWord()}>
+						Reload
+					</button>
+				</div>
+			</article>
 		</>
 	);
 }

@@ -20,5 +20,9 @@ export default function Hand({ children }) {
 		setPlayerHand(cards);
 	}, []);
 
-	return <div className="player_hand">{playerHand}</div>;
+	return (
+		<div className="centered">
+			<section className="cards">{playerHand}</section>
+		</div>
+	);
 }
