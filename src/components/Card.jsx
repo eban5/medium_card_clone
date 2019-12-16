@@ -3,7 +3,7 @@ import "./Card.css";
 import { word_bank } from "./data/word_bank";
 
 export default function Card(props) {
-	const { idx, word, onClick } = props;
+	const { word } = props;
 	const [fetchedWord, setFetchedWord] = useState(word);
 
 	const fetchNewWord = () => {
