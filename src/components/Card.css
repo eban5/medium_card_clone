@@ -16,13 +16,9 @@
 	border: 1px solid black;
 }
 
-.card:hover {
-	background: rgba(119, 136, 153, 0.5);
-}
-
-.card:focus, .card:visited,
-.card:active {
-	transition: background 0.3s ease-in;
+.card:visited,
+.green--bkg {
+	transition: background 0.05s ease-in;
 	background: coral;
 	font-weight: bold;
 }

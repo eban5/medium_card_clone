@@ -3,12 +3,10 @@ import Card from "./Card";
 import "./Hand.css";
 import { word_bank } from "./data/word_bank";
 
-export default function Hand({ children }) {
+export default function Hand() {
 	const [playerHand, setPlayerHand] = useState([]);
 
 	useEffect(() => {
-		// loop 6 times
-		// each time, get a random word, pass as props to Card, add to HandArray
 		let cards = [];
 
 		for (let i = 1; i <= 6; i++) {
